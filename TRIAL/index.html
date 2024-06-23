@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>GARAGE WORKSHOP</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+	<!--CSS-->
+	<style type="text/css">
+		.bg {
+			background-image: url('image/back.jpg');
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+			box-sizing: content-box;
+
+		}
+
+		header {
+			position: sticky;
+			top: 0;
+		}
+
+		.bg_div {
+			width: 695px;
+			height: auto;
+			margin: 20px;
+			padding: 20px;
+			box-sizing: border-box;
+			border-radius: 15px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 5%;
+			margin-bottom: 5%;
+			background-color: rgba(127, 127, 128, 0.637);
+			background-position: center bottom;
+			text-align: center;
+		}
+
+		.bg_subdiv {
+			width: 250px;
+			height: auto;
+			margin: 20px;
+			padding: 5px;
+			box-sizing: border-box;
+			border-radius: 15px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 5%;
+			margin-bottom: 5%;
+			background-color: rgba(127, 127, 128, 0.801);
+			background-position: center bottom;
+			text-align: center;
+		}
+
+		.header_text {
+			color: #ffffff;
+			font-size: 50px;
+			font-family: 'Nunito', sans-serif;
+		}
+
+		.header_subtext {
+			font-size: 25px;
+			color: #ffffff;
+			font-family: 'Nunito', sans-serif;
+		}
+
+		.font_text {
+			font-size: 19px;
+			color: #ffffff;
+			font-family: 'Nunito', sans-serif;
+		}
+
+		.service {
+			width: 1200px;
+			height: auto;
+			margin: 20px;
+			padding: 20px;
+			box-sizing: border-box;
+			border-radius: 15px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 5%;
+			margin-bottom: 5%;
+			background-color: rgba(127, 127, 128, 0.637);
+			background-position: center bottom;
+			text-align: center;
+		}
+
+		.service_display {
+			display: flex;
+
+		}
+
+		.service_image {
+			float: left;
+			margin: 10px;
+			width: 300px;
+			height: 180px;
+			/* border: 2px solid white; */
+			border-radius: 5px;
+
+		}
+
+		.service_info {
+			float: left;
+			text-align: center;
+			width: 780px;
+			margin: 20px;
+			/* background-color: rgba(252, 249, 249, 0.5); */
+			padding: 10px;
+			/* border: 3px solid white; */
+			border-radius: 5px;
+			font-size: 17px;
+			font-family: 'Nunito', sans-serif;
+			color: rgb(255, 255, 255);
+			/* font-weight: bold; */
+		}
+
+		.grid_gallery {
+			display: grid;
+			row-gap: 10px;
+			column-gap: 5px;
+			grid-template-columns: auto auto auto auto;
+
+		}
+
+		.grid_pic {
+			width: 155px;
+			height: 120px;
+			border: 2px solid white;
+			border-radius: 5px;
+		}
+
+		.garage_account_display {
+			display: flex;
+
+		}
+
+		.garage_image {
+			float: left;
+			margin: 10px;
+			/* background-color: rgba(127, 127, 128, 0.9); */
+
+		}
+
+		.garage_info {
+			float: left;
+			text-align: left;
+			width: 510px;
+			margin: 10px;
+			background-color: rgba(127, 127, 128, 0.9);
+			padding: 10px;
+			border: 3px solid white;
+			border-radius: 5px;
+			font-family: 'Nunito', sans-serif;
+			color: rgb(0, 0, 0);
+			font-weight: bold;
+		}
+
+		.signup_div {
+			display: flex;
+		}
+
+		.signup_subdiv {
+			float: left;
+			width: 250px;
+			height: auto;
+			margin: 20px;
+			padding: 5px;
+			box-sizing: border-box;
+			border-radius: 15px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 5%;
+			margin-bottom: 5%;
+			background-color: rgba(127, 127, 128, 0.801);
+			background-position: center bottom;
+			text-align: center;
+
+		}
+
+		.foot_div {
+			background-color: #cbe6e675;
+			padding-top: 10px;
+			border-radius: 5px;
+			margin-bottom: 5px;
+			margin-left: 0px;
+			margin-right: 0px;
+		}
+
+		.anchor_foot {
+			text-decoration: none;
+			color: rgba(255, 251, 251, 0.8);
+			font-family: 'Nunito', sans-serif;
+		}
+	</style>
+
+
+	<!--Javascript-->
+	<script type="text/javascript" src="js/validation.js"></script>
+	<!-- <link rel="stylesheet" type="text/css" href="css/index.css"> -->
+
+	<!--Bootstrap-->
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body id="bd" class="bg">
+	<header>
+		<!--Navbar-->
+		<nav class="navbar navbar-default" style="background-color: rgba(239, 227, 175, 0.63); border: 0px;">
+			<div class="container">
+				<div class="navbar-header">
+					<a href="index.html"><img src="image/logo.jpg" class="navbar-brand img-circle"></a>
+					<label class="navbar-brand " style="font-family: 'Nunito', sans-serif; font-size: 15px;"><a
+							href="index.html" style="text-decoration: none; color: rgba(255, 255, 255, 0.705);">GARAGE
+							WORKSHOP</a>
+					</label>
+
+				</div>
+
+				<!--Menu-->
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="index.html" style="color: rgba(255, 255, 255, 0.705);">Home</a></li>
+					<li><a href="services.html" style="color: rgba(255, 255, 255, 0.705);">Our Services</a></li>
+					<li><a href="aboutus.html" style="color: rgba(255, 255, 255, 0.705);">About Us</a></li>
+				</ul>
+
+				<form class="navbar-form navbar-left" action="#">
+					<div class="form-group">
+						<input type="text" name="" class="form-control">
+					</div>
+					<button type="submit" class="btn btn-warning">Search</button>
+				</form>
+
+			</div>
+		</nav>
+	</header>
+	<main>
+		<div class="bg_div">
+			<p class="header_text">WELCOME</p>
+			<hr style="border-color: white;">
+			<p class="font_text">We welcome you to our website which offers you some of the best services for your car,
+				Take a look around you might find something useful.</p>
+		</div>
+		<div class="service">
+			<p class="header_text">Why You Should Choose Us?</p>
+			<hr style="border-color: white;">
+			<div class="service_display">
+				<div class="service_image">
+					<img src="image/mechanic.jpg" class="service_image" alt="">
+				</div>
+				<div class="service_info">
+					<p style="font-size: 20px;">
+						<a href="" style="text-decoration: none;color: rgb(255, 255, 255); font-weight: 500;">
+							Affordable
+						</a>
+					</p>
+					<p>
+						We always focus on what is best for our customer and make it affordable.
+					</p>
+				</div>
+			</div>
+			<div class="service_display">
+				<div class="service_image">
+					<img src="image/quick.jpg" class="service_image" alt="">
+				</div>
+				<div class="service_info">
+					<p style="font-size: 20px;">
+						<a href="" style="text-decoration: none;color: rgb(255, 255, 255); font-weight: 500;">
+							Quick
+						</a>
+					</p>
+					<p>
+						Our staff always prioritize your problems first.
+					</p>
+				</div>
+			</div>
+			<div class="service_display">
+				<div class="service_image">
+					<img src="image/customer_service.jpg" class="service_image" alt="">
+				</div>
+				<div class="service_info">
+					<p style="font-size: 20px;">
+						<a href="" style="text-decoration: none;color: rgb(255, 255, 255); font-weight: 500;">
+							Good Customer Service
+						</a>
+					</p>
+					<p>
+						Our staff are always happy to help you in need.
+					</p>
+				</div>
+			</div>
+		</div>
+		<!-- ACCOUNT -->
+		<div class="bg_div">
+			<p class="header_text">Don't Have an Account</p>
+			<p class="header_subtext">Create One</p>
+			<hr style="border-color: white;">
+			<div class="signup_div">
+				<div class="signup_subdiv">
+					<a href="signup.html"
+						style="text-decoration: none; color: white; font-size: 17px;font-family: 'Nunito', sans-serif;">Sign
+						up as an User</a>
+				</div>
+				<div class="signup_subdiv">
+					<a href="garagesignup.html"
+						style="text-decoration: none; color: white; font-size: 17px;font-family: 'Nunito', sans-serif;">Sign
+						up as a Garage Owner</a>
+				</div>
+			</div>
+			<hr style="border-color: white;">
+			<p class="header_subtext">Already Have One</p>
+			<p class="header_subtext">then Log in</p>
+			<div class="signup_div">
+				<div class="signup_subdiv">
+					<a href="login.html"
+						style="text-decoration: none; color: white; font-size: 17px;font-family: 'Nunito', sans-serif;">Log
+						in as an User</a>
+				</div>
+				<div class="signup_subdiv">
+					<a href="garagelogin.html"
+						style="text-decoration: none; color: white; font-size: 17px;font-family: 'Nunito', sans-serif;">Log
+						in as a Garage Owner</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="bg_div">
+			<p class="header_text">Our Gallery</p>
+			<hr style="border-color: white;">
+			<!-- grid Gallery -->
+			<div class="grid_gallery">
+				<div>
+					<img src="image/customer_service.jpg" class="grid_pic " alt="">
+				</div>
+				<div>
+					<img src="image/mechanic.jpg" class="grid_pic " alt="">
+				</div>
+				<div>
+					<img src="image/quick.jpg" class="grid_pic " alt="">
+				</div>
+				<div>
+					<img src="image/quick2.jpg" class="grid_pic " alt="">
+				</div>
+				<div>
+					<img src="image/workshop_worker.jpg" class="grid_pic " alt="">
+				</div>
+				<div>
+					<img src="image/customer_service.jpg" class="grid_pic " alt="">
+				</div>
+				<div>
+					<img src="image/workshop_worker.jpg" class="grid_pic " alt="">
+				</div>
+				<div>
+					<img src="image/quick2.jpg" class="grid_pic " alt="">
+				</div>
+			</div>
+			<br>
+			<p align="right"><a href="" style="text-decoration: none;color: white ;font-family: 'Nunito', sans-serif;"
+					class="anchor_foot">More &#8594;</a></p>
+		</div>
+		<!-- LOCATE NEAREST GARAGE -->
+		<div class="bg_div">
+			<p class="header_text">Locate Nearest Garage</p>
+			<hr style="border-color: white;">
+			<div class="garage_account_display">
+				<div class="garage_image">
+					<a href="">
+						<img src="image/dwayne.jpg" class="img-thumbnail" style="width: 200px; height: 124.56px;"
+							alt="">
+					</a>
+				</div>
+				<div class="garage_info">
+					<p style="font-size: 20px;">
+						<a href="" style="text-decoration: none;color: rgb(0, 0, 0);">
+							Dwayne's Garage
+						</a>
+					</p>
+					<p>
+						Address: 32/1 C.R. Avenue, Kolkata-700001
+					</p>
+					<p>
+						Phone: 1234567890
+					</p>
+				</div>
+			</div>
+			<div class="garage_account_display">
+				<div class="garage_image">
+					<a href="">
+						<img src="image/mikegarage.jpg" class="img-thumbnail" style="width: 200px; height: 124.56px;"
+							alt="">
+					</a>
+				</div>
+				<div class="garage_info">
+					<p style="font-size: 20px;">
+						<a href="" style="text-decoration: none;color: rgb(0, 0, 0);">
+							Mike's Garage
+						</a>
+					</p>
+					<p>
+						Address: 13/6 A. P. C. Road, Kolkata-700001
+					</p>
+					<p>
+						Phone: 1234567890
+					</p>
+				</div>
+			</div>
+			<div class="garage_account_display">
+				<div class="garage_image">
+					<a href="">
+						<img src="image/classicgarage.jpg" class="img-thumbnail" style="width: 200px; height: 124.56px;"
+							alt="">
+					</a>
+				</div>
+				<div class="garage_info">
+					<p style="font-size: 20px;">
+						<a href="" style="text-decoration: none;color: rgb(0, 0, 0);">
+							Classic Car Garage
+						</a>
+					</p>
+					<p>
+						Address: 3B/6 Bag-Bazaar Shanjibni Road, Kolkata-700001
+					</p>
+					<p>
+						Phone: 1234567890
+					</p>
+				</div>
+			</div>
+			<br>
+			<p align="right"><a href="" style="text-decoration: none;color: white ;font-family: 'Nunito', sans-serif;"
+					class="anchor_foot">More &#8594;</a></p>
+		</div>
+		<!-- RAISE AN ISSUE -->
+		<div class="bg_div">
+			<p class="header_text">Having Problems With Your Car Then</p>
+			<p class="bg_subdiv">
+				<a href="raiseanissue.html"
+					style="text-decoration: none;color: white ; font-size: 40px; font-family: 'Nunito', sans-serif;">Click
+					here
+				</a>
+			</P>
+		</div>
+
+		<!-- ENDING SECTION  -->
+		<div class="bg_div">
+			<p class="header_subtext">THANK YOU FOR VISITNG</p>
+		</div>
+	</main>
+
+	<!-- Footer -->
+	<footer>
+		<div class="container foot_div">
+			<div class="col-md-12">
+				<div class="col-md-4">
+
+					<p><a href="" style="text-decoration: none;color: white ;font-family: 'Nunito', sans-serif;"
+							class="anchor_foot">Terms & conditions</a></p>
+					<p><a href="policy.html"
+							style="text-decoration: none;color: white ;  font-family: 'Nunito', sans-serif;"
+							class="anchor_foot">Our privacy poilicy</a></p>
+					<p><a href="" style="text-decoration: none;color: white ;font-family: 'Nunito', sans-serif;"
+							class="anchor_foot">Contact us</a></p>
+				</div>
+
+				<div class="col-md-4">
+					<label>Address</label>
+					<br>
+					<b> Sector M, Sour lake, Kolkata - 700002</b>
+				</div>
+
+				<div class="col-md-4">
+					<label>Subscribe Here</label>
+					<form class="form-group" action="#">
+						<div>
+							<input type="email" name="" placeholder="Enter your email" class="form-control">
+
+
+						</div>
+						<button type="submit" class="btn btn-warning">Search</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="container">
+		<p style="text-align:center; color:white; margin: 0;padding: 0;">
+			Copyright &copy; | All Rights Reserved
+		</p>
+	</div>
+</body>
+
+</html>

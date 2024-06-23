@@ -1,0 +1,62 @@
+#div1 {
+    background-color: #ffffda;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+}
+#input1, #input2, #input3, #input4, #input5, #input6, #drpdwn {
+	font-family: "Monotype Corsiva";
+	font-size: 20px;
+	color: rgb(0, 0, 0);
+	height: 25px;
+	width: 200px;
+}
+#inp1 {
+    padding-bottom: 15px;
+}
+#inp2 {
+	padding-bottom: 15px;
+}
+#inp3 {
+	padding-bottom: 15px;
+}
+#inp4 {
+	padding-bottom: 15px;
+}
+#inp5 {
+	padding-bottom: 15px;
+}
+#inp6 {
+	padding-bottom: 15px;
+}
+#inp7 {
+    padding-bottom: 15px;
+}
+#inp8 {
+    padding-bottom: 15px;
+}
+#inp9 {
+    padding-bottom: 15px;
+}
+/*<div class="container">
+ <button type="submit" class="btn btn-success" data-toggle="modal" data-target="#myModal">Click Here</button>
+
+ <!-- Bootstrap Modal -->
+ <div class="modal fade" id="myModal" role="dialog">
+  <div class="modal-dialog">
+   <div class="modal-content">
+    <div class="modal-header">
+     <button type="button" class="close" data-dismiss="modal">&times;</button>
+     <h3 class="modal-title">My Modal Header</h3>
+    </div>
+    <div class="modal-body">
+     <label>Hello Everyone, your modal is loaded &copy;</label>
+    </div>
+    <div class="modal-footer">
+     <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+    </div>
+   </div>
+  </div>
+ </div>
+</div>
+*/

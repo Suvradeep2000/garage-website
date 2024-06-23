@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raise an Issue</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <!--CSS-->
+    <style type="text/css">
+        .bg_issue {
+            background-image: url('image/back.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            box-sizing: content-box;
+
+        }
+
+        /* * {
+            box-sizing: content-box; 
+        } */
+
+        .nav_name {
+            color: white;
+        }
+
+        #p1 {
+            text-align: center;
+            font-size: 60px;
+            color: #ffffff;
+            font-family: 'Nunito', sans-serif;
+        }
+
+        .form_font {
+			font-size: 25px;
+			color: #ecebebbe;
+			font-family: 'Nunito', sans-serif;
+			text-align: center
+		}
+
+        #name,#email,#description {
+            font-size: 25px;
+            color: black;
+            font-family: 'Nunito', sans-serif;
+            margin: 5px;
+        }
+       
+        .main {
+            width: 500px;
+            height: auto;
+            margin: 20px;
+            padding: 20px;
+            box-sizing: border-box;
+            border-radius: 15px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            background-color: rgba(127, 127, 128, 0.637);
+            background-position: center bottom;
+            text-align: center;
+        }
+
+        .foot_div {
+            background-color: #cbe6e675;
+            padding-top: 10px;
+            border-radius: 5px;
+            margin-bottom: 5px;
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+
+       
+        header {
+            position: sticky;
+            top: 0;
+        }
+        .anchor_foot{
+			text-decoration: none;
+			color: rgba(255, 255, 255, 0.8);
+			font-family: 'Nunito', sans-serif;
+		}
+        
+    </style>
+
+    <!--Javascript-->
+    <script type="text/javascript" src="js/validationraiseanissue.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="css/styleraiseanissue.css"> -->
+
+    <!--Bootstrap-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body id="bd" class="bg_issue">
+    <header>
+        <!--Navbar-->
+        <nav class="navbar navbar-default" style="background-color: rgba(239, 227, 175, 0.63); border: 0px;">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="index.html"><img src="image/logo.jpg" class="navbar-brand img-circle"></a>
+                    <label class="navbar-brand " style="font-family: 'Nunito', sans-serif; font-size: 15px;"><a
+                            href="index.html"
+                            style="text-decoration: none; color: rgba(255, 255, 255, 0.705);">GARAGE
+                            WORKSHOP</a>
+                    </label>
+                </div>
+
+                <!--Menu-->
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html" style="color: rgba(255, 255, 255, 0.705);">Home</a></li>
+                    <li><a href="services.html" style="color: rgba(255, 255, 255, 0.705);">Our Services</a></li>
+                    <li><a href="aboutus.html" style="color: rgba(255, 255, 255, 0.705);">About Us</a></li>
+                </ul>
+
+                <form class="navbar-form navbar-left" action="#">
+                    <div class="form-group">
+                        <input type="text" name="" class="form-control">
+                    </div>
+                    <button type="submit" class="btn btn-warning">Search</button>
+                </form>
+
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+        <div class="container">
+
+            <p id="p1" align="center">RAISE AN ISSUE HERE</p>
+            
+            <hr style="border-color: white;">
+        </div>
+
+        <div class="main" align="center">
+            <form name="IssueForm" class="form-group" align="center">
+                <p class="form_font" align="center">YOUR NAME</p>
+
+                <table align="center">
+                    <td>
+                        <input type="text" name="" placeholder="Enter your name here" id="name"  class="form-control">
+                    </td>
+                    </tr>
+                </table>
+                <br>
+                <p class="form_font" align="center">YOUR EMAIL</p>
+                <table align="center">
+                    <tr>
+                        <td>
+                            <input type="email" name="" id="email" placeholder="Enter your email address here" 
+                                class="form-control">
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                <p class="form_font" align="center">BOOK SLOT FROM</p>
+				<table align="center">
+					<tr>
+						<td>
+							<input type="datetime-local" name="" placeholder="Enter your DOB here" id="dob" class="form-control">
+						</td>
+					</tr>
+				</table>
+                <br>
+                <p class="form_font" align="center">TO</p>
+				<table align="center">
+					<tr>
+						<td>
+							<input type="datetime-local" name="" placeholder="Enter your DOB here" id="dob" class="form-control">
+						</td>
+					</tr>
+				</table>
+                <br>
+                <p class="form_font" align="center">DESCRIBE YOUR ISSUE</p>
+
+                <table align="center">
+                    <tr>
+                        <td>
+                            <!-- <input type="text" name="" placeholder="Describe your issue" id="description"
+                                class="form-control" style="width: 100%; height: 350px;"> -->
+                            <textarea name="" class="form-control" id="description" cols="30" rows="10"
+                                placeholder="Describe your issue"></textarea>
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                <table align="center">
+                    <tr>
+                        <td style="color: white; font-family: 'Nunito', sans-serif;">
+                            <input type="checkbox" name="chkbox"> I agree that the raised issue is a genuine concern of
+                            mine and it is not a spam.
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                <table align="center">
+                    <tr>
+                        <td style="padding-right: 25px;">
+                            <button class="btn btn-warning">
+                                <a href="index.html" style="text-decoration: none;color: black ;">Click to go back</a>
+                            </button>
+                        </td>
+                        <br>
+                        <td>
+                            <input type="submit" value="Submit" onclick="return valid()" class="btn btn-success">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </main>
+    <footer>
+		<div class="container foot_div">
+			<div class="col-md-12">
+				<div class="col-md-4">
+
+					<p><a href="" style="text-decoration: none;color: white ;   font-family: 'Nunito', sans-serif;"
+							class="anchor_foot">Terms & conditions</a></p>
+					<p><a href="policy.html"
+							style="text-decoration: none;color: white ;  font-family: 'Nunito', sans-serif;"
+							class="anchor_foot">Our privacy poilicy</a></p>
+					<p><a href="" style="text-decoration: none;color: white ;  font-family: 'Nunito', sans-serif;"
+							class="anchor_foot">Contact us</a></p>
+				</div>
+
+				<div class="col-md-4">
+					<label>Address</label>
+					<br>
+					<b> Sector M, Sour lake, Kolkata - 700002</b>
+				</div>
+
+				<div class="col-md-4">
+					<label>Subscribe Here</label>
+					<form class="form-group" action="#">
+						<div>
+							<input type="email" name="" placeholder="Enter your email" class="form-control">
+
+
+						</div>
+						<button type="submit" class="btn btn-warning">Search</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="container">
+		<p style="text-align:center; color:white; margin: 0;padding: 0;">
+			Copyright &copy; | All Rights Reserved
+		</p>
+	</div>
+    <br>
+</body>
+
+</html>

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sign Up</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+	<!--CSS-->
+	<style type="text/css">
+		.bg_signup_garage {
+			background-image: url('image/back.jpg');
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+			box-sizing: content-box;
+
+		}
+
+		header {
+			position: sticky;
+			top: 0;
+		}
+
+		#signup {
+			text-align: center;
+			font-size: 60px;
+			color: #ffffff;
+			font-family: 'Nunito', sans-serif;
+		}
+
+		#signup_bottom_text {
+			color: #ffffff;
+			font-family: 'Nunito', sans-serif;
+			text-align: center;
+			font-size: 20px;
+		}
+		.div_signup_body {
+			display: inline-flex center;
+			width: 430px;
+			height: auto;
+			margin: 20px;
+			padding: 20px;
+			box-sizing: content-box;
+			border-radius: 15px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 5%;
+			margin-bottom: 5%;
+			background-color: rgba(127, 127, 128, 0.637);
+			background-position: center bottom;
+			text-align: center;
+			justify-items: center;
+
+			
+		}
+		.form_font {
+			font-size: 25px;
+			color: #ecebebbe;
+			font-family: 'Nunito', sans-serif;
+			text-align: center
+		}
+		#name,
+		#email,
+		#contact,
+		#address,
+		#license,
+		#password {
+			font-size: 25px;
+			color: black;
+			font-family: 'Nunito', sans-serif;
+			margin: 5px;
+		}
+		.login_button {
+			width: 50px;
+			height: auto;
+			margin: 20px;
+			padding: 20px;
+			box-sizing: content-box;
+			border-radius: 15px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 1%;
+			margin-bottom: 5%;
+			background-color: rgba(127, 127, 128, 0.637);
+			background-position: center bottom;
+			text-align: center;
+		}
+		.login_font {
+			text-align: center;
+			color: white;
+			font-family: 'Nunito', sans-serif;
+			font-size: 1.46vw;
+		}
+
+		.foot_div {
+			background-color: #cbe6e675;
+			padding-top: 10px;
+			border-radius: 5px;
+			margin-bottom: 5px;
+			margin-left: 0px;
+			margin-right: 0px;
+		}
+
+		.anchor_foot {
+			text-decoration: none;
+			color: rgba(255, 251, 251, 0.8);
+			font-family: 'Nunito', sans-serif;
+		}
+	</style>
+
+	<!--Javascript-->
+	<script type="text/javascript" src="js/garagevalidationsignup.js"></script>
+	<!-- <link rel="stylesheet" type="text/css" href="css/garagesignup.css"> -->
+
+	<!--Bootstrap-->
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body id="bgc" class="bg_signup_garage">
+	<!--Navbar-->
+	<header>
+		<!--Navbar-->
+		<nav class="navbar navbar-default" style="background-color: rgba(239, 227, 175, 0.63); border: 0px;">
+			<div class="container">
+				<div class="navbar-header">
+					<a href="index.html"><img src="image/logo.jpg" class="navbar-brand img-circle"></a>
+					<label class="navbar-brand " style="font-family: 'Nunito', sans-serif; font-size: 15px;"><a
+							href="index.html" style="text-decoration: none; color: rgba(255, 255, 255, 0.705);">GARAGE
+							WORKSHOP</a>
+					</label>
+
+				</div>
+
+				<!--Menu-->
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="index.html" style="color: rgba(255, 255, 255, 0.705);">Home</a></li>
+					<li><a href="services.html" style="color: rgba(255, 255, 255, 0.705);">Our Services</a></li>
+					<li><a href="aboutus.html" style="color: rgba(255, 255, 255, 0.705);">About Us</a></li>
+				</ul>
+
+				<form class="navbar-form navbar-left" action="#">
+					<div class="form-group">
+						<input type="text" name="" class="form-control">
+					</div>
+					<button type="submit" class="btn btn-warning">Search</button>
+				</form>
+
+			</div>
+		</nav>
+	</header>
+	<main>
+		<div id="div1" class="container">
+
+			<p id="signup" align="center">SIGN UP</p>
+			<p id="signup_bottom_text" align="center">as a Garage Owner</p>
+			<hr style="border-color: white;">
+		</div>
+		<div class="div_signup_body">	
+			<form name="myForm" class="form-group">
+				<p class="form_font" align="center">YOUR NAME</p>
+				<table align="center">
+					<tr>
+						<td id="inp1">
+							<input type="text" name="" placeholder="Enter your garage name here" id="name"
+								class="form-control">
+						</td>
+					</tr>
+				</table>
+				<p class="form_font" align="center">YOUR EMAIL</p>
+				<table align="center">
+					<tr>
+						<td id="inp2">
+							<input type="email" name="" placeholder="Enter your email here" id="email"
+							class="form-control">
+						</td>
+					</tr>
+				</table>
+				<p class="form_font" align="center">YOUR CONTACT</p>
+				<table align="center">
+					<tr>
+						<td id="inp3">
+							<input type="text" name="" placeholder="Enter your contact number here" id="contact"
+							class="form-control">
+						</td>
+					</tr>
+				</table>
+				<p class="form_font" align="center">YOUR ADDRESS</p>
+				<table align="center">
+					<tr>
+						<td id="inp4">
+							<input type="text" name="" placeholder="Enter your address here" id="address"
+							class="form-control">
+						</td>
+					</tr>
+				</table>
+				<p class="form_font" align="center">YOUR LICENSE NUMBER</p>
+				<table align="center">
+					<tr>
+						<td id="inp5">
+							<input type="text" name="" placeholder="Enter your license number here" id="license"
+							class="form-control">
+						</td>
+					</tr>
+				</table>
+				<p class="form_font" align="center">YOUR PASSWORD</p>
+				<table align="center">
+					<tr>
+						<td id="inp6">
+							<input type="password" name="" placeholder="Enter your password here" id="password"
+							class="form-control">
+						</td>
+					</tr>
+				</table>
+				<table align="center">
+					<tr>
+						<td style="color: white; font-family: 'Nunito', sans-serif;">
+							<input type="checkbox" name="chkbx"> I agree that all the information given are true by my
+							knowledge.
+						</td>
+					</tr>
+				</table>
+				<br>
+				<table align="center">
+					<tr>
+						<td id="inp8">
+							<input type="submit" value="Sign Up" onclick="return valid()" class="btn btn-success">
+						</td>
+					</tr>
+				</table>
+			</form>
+		</div>
+		<div class="container">
+			<hr style="border-color: white;">
+		</div>
+		<div>
+			<p class="login_font">
+				Already have an account, then click below
+			</p>
+		</div>
+		<div class="login_button">
+			<a href="garagelogin.html" style="text-decoration: none;color: white ; font-family: 'Nunito', sans-serif;">LOG IN</a>
+		</div>
+	</main>
+	<!-- Footer -->
+	<footer>
+		<div class="container foot_div">
+			<div class="col-md-12">
+				<div class="col-md-4">
+
+					<p><a href="" style="text-decoration: none;color: white ;   font-family: 'Nunito', sans-serif;"
+							class="anchor_foot">Terms & conditions</a></p>
+					<p><a href="policy.html"
+							style="text-decoration: none;color: white ;  font-family: 'Nunito', sans-serif;"
+							class="anchor_foot">Our privacy poilicy</a></p>
+					<p><a href="" style="text-decoration: none;color: white ;  font-family: 'Nunito', sans-serif;"
+							class="anchor_foot">Contact us</a></p>
+				</div>
+
+				<div class="col-md-4">
+					<label>Address</label>
+					<br>
+					<b> Sector M, Sour lake, Kolkata - 700002</b>
+				</div>
+
+				<div class="col-md-4">
+					<label>Subscribe Here</label>
+					<form class="form-group" action="#">
+						<div>
+							<input type="email" name="" placeholder="Enter your email" class="form-control">
+
+
+						</div>
+						<button type="submit" class="btn btn-warning">Search</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="container">
+		<p style="text-align:center; color:white; margin: 0;padding: 0;">
+			Copyright &copy; | All Rights Reserved
+		</p>
+	</div>
+    <br>
+</body>
+
+</html>

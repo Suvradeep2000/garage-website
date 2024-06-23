@@ -1,0 +1,22 @@
+#bgc {
+    background-color: #ffffda;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+}
+#login {
+	font-family: Gabriola;
+}
+#inpt1, #inpt2 {
+	font-family: "Monotype Corsiva";
+	font-size: 20px;
+	color: black;
+	height: 25px;
+	width: 250px;
+}
+#in1 {
+    padding-bottom: 15px;
+}
+#in2 {
+	padding-bottom: 15px;
+}

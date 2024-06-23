@@ -1,0 +1,68 @@
+#bgc {
+    background-color: #ffffda;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+}
+#p1 {
+    font-family: Gabriola;
+}
+#input2, #input4, #input8 {
+    font-family: "Monotype Corsiva";
+    font-size: 20px;
+    color: black;
+    height: 30px;
+    width: 200px;
+}
+#input3, #input5 {
+    font-family: "Monotype Corsiva";
+    font-size: 20px;
+    color: black;
+    height: 30px;
+    width: 250px;
+}
+#input1, #input6{
+    font-family: "Monotype Corsiva";
+    font-size: 20px;
+    color: black;
+    height: 30px;
+    width: 230px;
+}
+#inp7 {
+    font-family: "Monotype Corsiva";
+    font-size: 18px;
+    color: black;
+    height: 25px;
+    width: 200px;
+}
+#input7 {
+    font-family: "Monotype Corsiva";
+    font-size: 18px;
+    color: black;
+    height: 25px;
+    width: 200px;
+}
+#inp1 {
+    padding-bottom: 15px;
+}
+#inp2 {
+	padding-bottom: 15px;
+}
+#inp3 {
+	padding-bottom: 15px;
+}
+#inp4 {
+	padding-bottom: 15px;
+}
+#inp5 {
+	padding-bottom: 15px;
+}
+#inp6 {
+	padding-bottom: 15px;
+}
+#inp7 {
+    padding-bottom: 15px;
+}
+#inp8 {
+    padding-bottom: 15px;
+}
